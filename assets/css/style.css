@@ -1,11 +1,15 @@
 body {
     font-family: 'Arimo', sans-serif;
-    background-color: beige;
+    background-color: rgb(255, 250, 250);
 }
 footer {
     text-align: center;
     line-height: 50px;
+    color: white;
     height: 50px;
+    background-color: slategray;
+}
+.navbar {
     background-color: slategray;
 }
 .card {
