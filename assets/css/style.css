@@ -2,6 +2,6 @@ body {
     font-family: 'Arimo', sans-serif;
     background-color: rgb(255, 250, 250);
 }
-.ui.main.container {
+.main {
     margin-top: 50px;
 }
