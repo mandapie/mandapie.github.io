@@ -6,110 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <title>Home | Amanda Pan</title>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarFull" aria-controls="navBarFull"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navBarFull">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Welcome, everyone!</h1>
-            <p class="lead">My website is really plain and some stylings are off at the moment, BUT! I am working on it to show my skill sets that I've achieved!</p>
-            <hr class="my-4">
-            <p>Right now, Only the Portfolio link works. There, you can view some of my fun projects.</p>
-        </div>
-
-        <div>
-            <h2>Web Applications</h2>
-        </div>
-        <div class="row d-flex flex-wrap" style="margin-bottom: 20px;">
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <!-- <img class="card-img-top" src="" alt="Card image cap"> -->
-                    <div class="card-body">
-                        <h5 class="card-title">"Tut4You"</h5>
-                        <p class="card-text">J2EE Web App</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">TomEE Plume, MySQL, JSF, JPA, EJB, AWS EC2, S3</li>
-                        <li class="list-group-item">To be deployed</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link disabled">DEMO</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <!-- <img class="card-img-top" src="" alt="Card image cap"> -->
-                    <div class="card-body">
-                        <h5 class="card-title">Yelp Camp</h5>
-                        <p class="card-text">To be Completed</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link disabled">DEMO</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <!-- <img class="card-img-top" src="" alt="Card image cap"> -->
-                    <div class="card-body">
-                        <h5 class="card-title">Music Store</h5>
-                        <p class="card-text">Music Store in ASP.NET MVC 5</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">To be deployed</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link disabled">DEMO</a>
-                    </div>
-                </div>
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+            <a class="header item" href="index.html">Home</a>
+            <div class="menu right">
+                <a class="item" href="portfolio.html">Portfolio</a>
+                <a class="item" href="about.html">About Me</a>
+                <a class="item" href="contact.html">Contact</a>
             </div>
         </div>
     </div>
 
-    <footer>
+    <div class="ui main container">
+        <div class="ui huge header">Welcome</div>
+        <div class="">
+            <p class="">My website is really plain and some stylings are off at the moment, BUT! I am working on it to show my skill
+                sets that I've achieved!</p>
+            <hr>
+            <p>Right now, Only the Portfolio link works. There, you can view some of my fun projects.</p>
+        </div>
+    </div>
+
+    <!-- <footer>
         <div class="container">
             &copy;
             <span class="date"></span> amandapan.com
         </div>
-    </footer>
+    </footer> -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 

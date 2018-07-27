@@ -6,84 +6,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Porfolio | Amanda Pan</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <title>Home | Amanda Pan</title>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarFull" aria-controls="navBarFull"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navBarFull">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+            <a class="header item" href="index.html">Home</a>
+            <div class="menu right">
+                <a class="item" href="portfolio.html">Portfolio</a>
+                <a class="item" href="about.html">About Me</a>
+                <a class="item" href="contact.html">Contact</a>
             </div>
         </div>
-    </nav>
+    </div>
 
-    <div class="container">
-        <div>
-            <h2>Projects</h2>
+    <div class="ui main container">
+        <h2>Web Applications</h2>
+        <div class="ui three column grid">
+            <div class="column">
+                <div class="ui fluid card">
+                    <!-- <div class="image">
+                            <img src="">
+                        </div> -->
+                    <div class="content">
+                        <div class="header">Tut4You</div>
+                        <div class="meta">
+                            <a>Java EE Web Application</a>
+                        </div>
+                        <div class="description">
+                            <p>Tut4You allows college students to find tutors at their most convinient time and location.</p>
+                            <p>TomEE Plume, MySQL, JSF, JPA, EJB, AWS EC2, S3, Git, Bootsfaces, Primefaces</p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="right floated">
+                            Sep 2017 - May 2018
+                        </span>
+                        <span>
+                            <i class="cloud upload icon"></i>
+                            To be deployed
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui fluid card">
+                    <!-- <div class="image">
+                            <img src="">
+                        </div> -->
+                    <div class="content">
+                        <div class="header">Yelp Camp</div>
+                        <div class="meta">
+                            <a>Node Web Application</a>
+                        </div>
+                        <div class="description">
+                            <p>Yelp Camp allows users to create new campground and receive feedbacks from other users.</p>
+                            <p>Node.js, Express.js MongoDB, Passport.js, Method-override, Bootstrap</p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="right floated">
+                            Jun 2018 - PRESENT
+                        </span>
+                        <span>
+                            <i class="cloud upload icon"></i>
+                            To be deployed
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui fluid card">
+                    <!-- <div class="image">
+                            <img src="">
+                        </div> -->
+                    <div class="content">
+                        <div class="header">Music Store</div>
+                        <div class="meta">
+                            <a>ASP.NET MVC 5 Web Application</a>
+                        </div>
+                        <div class="description">
+                            <p>This store allows users to shop for music of their favorite genres or artists.</p>
+                            <p>C#, Razor, ASP.NET, MVC 5, entity framework</p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="right floated">
+                            May 2017
+                        </span>
+                        <span>
+                            <i class="cloud upload icon"></i>
+                            To be deployed
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row d-flex flex-wrap" style="margin-bottom: 20px;">
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <!-- <img class="card-img-top" src="" alt="Card image cap"> -->
-                    <div class="card-body">
-                        <h5 class="card-title">Color Game</h5>
-                        <p class="card-text">Guess the RGB Color!</p>
+
+        <h2>Frontend Projects</h2>
+        <div class="ui three column grid">
+            <div class="column">
+                <div class="ui link fluid card">
+                    <!-- <div class="image">
+                            <img src="">
+                        </div> -->
+                    <div class="content">
+                        <a target="_blank" href="Color_Game/color.html" class="header">Color Game</a>
+                        <div class="meta">
+                            <a>Vanilla Javascript</a>
+                        </div>
+                        <div class="description">
+                            <p>Guess the RGB code based on the given color.</p>
+                            <p>HTML 5, CSS 3, JavaScript</p>
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">HTML, CSS, Pure JS</li>
-                    </ul>
-                    <div class="card-body">
-                        <a target="_blank" href="Color_Game/color.html" class="card-link">DEMO</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <!-- <img class="card-img-top" src="" alt="Card image cap"> -->
-                    <div class="card-body">
-                        <h5 class="card-title">Todo List</h5>
-                        <p class="card-text">Add a task! You can check it off to mark as done or delete it if you want to!</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">HTML, CSS, jQuery</li>
-                    </ul>
-                    <div class="card-body">
-                        <a target="_blank" href="Todo_List/todo.html" class="card-link">DEMO</a>
+                    <div class="extra content">
+                        <span class="right floated">
+                            June 2018
+                        </span>
+                        <span>
+                            <i class="cloud upload icon"></i>
+                            <a target="_blank" href="Color_Game/color.html">Live Now</a>
+                        </span>
                     </div>
                 </div>
             </div>
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <!-- <img class="card-img-top" src="" alt="Card image cap"> -->
-                    <div class="card-body">
-                        <h5 class="card-title">Patatap Clone</h5>
-                        <p class="card-text">Press any A-Z keys for unique sounds and cool animations!</p>
+            <div class="column">
+                <div class="ui link fluid card">
+                    <!-- <div class="image">
+                            <img src="">
+                        </div> -->
+                    <div class="content">
+                        <a target="_blank" href="Todo_List/todo.html" class="header">Todo List</a>
+                        <div class="meta">
+                            <a>JQuery</a>
+                        </div>
+                        <div class="description">
+                            <p>Add, cross out, or delete a task on the list. <b>Don't actually use this. It doesn't save.</b></p>
+                            <p>HTML 5, CSS 3, jQuery</p>
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">HTML, CSS, Paper.js, Howler.js</li>
-                    </ul>
-                    <div class="card-body">
-                        <a target="_blank" href="Patatap_Clone/patatap.html" class="card-link">DEMO</a>
+                    <div class="extra content">
+                        <span class="right floated">
+                            Jun 2018
+                        </span>
+                        <span>
+                            <i class="cloud upload icon"></i>
+                            <a target="_blank" href="Todo_List/todo.html">Live Now</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui link fluid card">
+                    <!-- <div class="image">
+                            <img src="">
+                        </div> -->
+                    <div class="content">
+                        <a target="_blank" href="Patatap_Clone/patatap.html" class="header">Patatap Clone</a>
+                        <div class="meta">
+                            <a>Paper.js</a>
+                        </div>
+                        <div class="description">
+                            <p>Press any A-Z keys for unique sounds and cool animations.</p>
+                            <p>HTML 5, CSS 3, Paper.js, Howler.js</p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="right floated">
+                            July 2017
+                        </span>
+                        <span>
+                            <i class="cloud upload icon"></i>
+                            <a target="_blank" href="Patatap_Clone/patatap.html">Live Now</a>
+                        </span>
                     </div>
                 </div>
             </div>
