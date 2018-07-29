@@ -25,6 +25,9 @@ footer i.icon:hover {
     color: black;
 }
 .row {
+    margin-bottom: 30px;
+}
+.ui.fluid.card {
     margin-bottom: 20px;
 }
 #about-info {
