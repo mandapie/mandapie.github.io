@@ -1,6 +1,5 @@
 $(function () {
-    $(window).scroll(function () {
-        console.log("scrolling...");
+    $(document).scroll(function () {
         var $nav = $("#mainNav");
         $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
     });
