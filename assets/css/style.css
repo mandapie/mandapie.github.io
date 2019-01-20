@@ -51,6 +51,12 @@ h5 {
 strong {
     font-weight: 500;
 }
+.link {
+    color: #2c78cc;
+}
+.link:hover {
+    color: #285a91;
+}
 
 /* override bootstrap stuff */
 .carousel-caption {
