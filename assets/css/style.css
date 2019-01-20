@@ -48,6 +48,9 @@ h5 {
 .card-body-footer {
     flex:1;
 }
+strong {
+    font-weight: 500;
+}
 
 /* override bootstrap stuff */
 .carousel-caption {
