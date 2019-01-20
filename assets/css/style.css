@@ -62,17 +62,18 @@ strong {
     .navbar-nav {
         padding: 5px;
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.7);
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.8);
         top: 52px;
         right: 0;
         text-align: end;
-        margin-right: 32px;
+        margin-right: 20px;
     }
     .collapsing {
         position: inherit;
         height: 0!important;
         overflow: hidden;
-        transition: none;
+        transition: none!important;
     }
 }
 
@@ -96,7 +97,7 @@ a:hover {
 }
 .navbar-light .navbar-toggler {
     border-color: rgba(255, 255, 255, 0);
-    position: fixed;
+    position: absolute;
     top: 11px;
 }
 .navbar-light .navbar-toggler:focus {
