@@ -38,7 +38,7 @@ body {
 h5 {
     font-weight: 400;
 }
-#experience {
+.short-content {
     max-width: 700px;
     text-align: justify;
 }
@@ -56,6 +56,9 @@ strong {
 }
 .link:hover {
     color: #285a91;
+}
+.btn:hover {
+    background-color: rgb(204, 204, 204);
 }
 
 @media screen and (max-width: 575px) {
