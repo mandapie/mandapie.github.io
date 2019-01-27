@@ -33,7 +33,9 @@ function closeScroll() {
     end_scroll.classList.add("end-scroll-up-animation");
     end_scroll_rod.classList.add("end-scroll-rod-up-animation");
 
-    words.innerHTML = "";
+    setTimeout(function () {
+        words.innerHTML = "";
+    }, 500);
 }
 
 function openScroll() {
@@ -46,5 +48,8 @@ function openScroll() {
     end_scroll_rod.classList.add("end-scroll-rod-down-animation");
 
     var index = Math.floor(Math.random() * (max - min)) + min;
-    words.innerHTML = messages[index];
+    
+    setTimeout(function () {
+        words.innerHTML = messages[index];
+    }, 300);
 }

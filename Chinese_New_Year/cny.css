@@ -443,7 +443,7 @@ h1 {
     position: relative;
     bottom: 310px;
     width: 200px;
-    height: 155px;
+    height: 140px;
     background-color: red;
     border: 1px solid black;
     display: flex;
@@ -501,7 +501,7 @@ h1 {
 @keyframes scroll-down {
     0% {
         bottom: 310px;
-        height: 155px;
+        height: 140px;
     }
     100% {
         bottom: 170px;
@@ -532,7 +532,7 @@ h1 {
     }
     100% {
         bottom: 310px;
-        height: 155px;
+        height: 140px;
     }
 }
 @keyframes end-scroll-up {
