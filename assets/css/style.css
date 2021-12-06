@@ -29,6 +29,9 @@ body {
 .icon {
     color: gray;
 }
+.icon-git {
+    float: right;
+}
 .content {
     margin: 0 auto;
     width: 80%;

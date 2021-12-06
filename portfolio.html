@@ -13,10 +13,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Portfolio | Amanda Pan</title>
 </head>
@@ -25,8 +26,8 @@
     <header class="d-flex justify-content-between">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
+                <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><i class="far fa-folder-open"></i> Portfolio</li>
             </ol>
         </nav>
         <nav class="navbar navbar-light navbar-expand-sm justify-content-end">
@@ -37,10 +38,10 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav">
                     <li class="nav-item pr-sm-4 p-2 p-sm-0">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="about.html"><i class="far fa-question-circle"></i> About</a>
                     </li>
                     <li class="nav-item p-2 p-sm-0">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html"><i class="fas fa-phone"></i> Contact</a>
                     </li>
                 </ul>
             </div>
@@ -52,22 +53,22 @@
         <div class="d-flex flex-wrap">
             <div class="col-md-6 col-lg-4 px-1 d-flex">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="assets/images/tickertracker.png" alt="ticker tracker">
+                    <img class="card-img-top" src="assets/images/musicstore.png" alt="music store">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Ticker Tracker
+                        <h5 class="card-title">Music Store
                             <small>
-                                <a class="icon" target="_blank" href="https://github.com/mandapie/ticker-tracker">
+                                <a class="icon icon-git" target="_blank"
+                                    href="https://github.com/mandapie/MusicStore-MVC5-DotNet">
                                     <i class="fas fa-code-branch"></i>
                                 </a>
                             </small>
                         </h5>
-                        <p class="card-text text-justify">Ticker Tracker allows users to keep track of their items with
-                            friends.</p>
-                        <small class="mt-auto">Node.js, EJS, Express.js MongoDB, Passport.js, Flash.js,
-                            Method-override, Semantic UI, Bootstrap</small>
+                        <p class="card-text text-justify">Microsoft's Music Store in MVC 5 using Visual Studio 2019
+                            (Framework 4.7.2)</p>
+                        <small class="mt-auto">C#, .NET, Bootstrap</small>
                     </div>
                     <div class="card-footer d-flex justify-content-between">
-                        <small class="text-muted">Jul 2018 - Sep 2018</small>
+                        <small class="text-muted">Dec 2021</small>
                         <!-- <small class="link">
                             <a target="_blank" href="https://tickertracker.amandapan.com">
                                 <i class="fas fa-cloud-upload-alt mr-1"></i>Live Now
@@ -81,11 +82,37 @@
             </div>
             <div class="col-md-6 col-lg-4 px-1 d-flex">
                 <div class="card mb-3">
+                    <img class="card-img-top" src="assets/images/tickertracker.png" alt="ticker tracker">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ticker Tracker
+                            <small>
+                                <a class="icon icon-git" target="_blank"
+                                    href="https://github.com/mandapie/ticker-tracker">
+                                    <i class="fas fa-code-branch"></i>
+                                </a>
+                            </small>
+                        </h5>
+                        <p class="card-text text-justify">Ticker Tracker allows users to keep track of their items with
+                            friends.</p>
+                        <small class="mt-auto">Node.js, EJS, Express.js MongoDB, Passport.js, Flash.js,
+                            Method-override, Semantic UI, Bootstrap</small>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <small class="text-muted">Jul 2018 - Sep 2018</small>
+                        <small class="text-muted">
+                            <i class="fas fa-cloud-upload-alt mr-1"></i>Localhost
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 px-1 d-flex">
+                <div class="card mb-3">
                     <img class="card-img-top" src="assets/images/tut4you.png" alt="tutors for you">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Tut4You
                             <small>
-                                <a class="icon" target="_blank" href="https://github.com/mandapie/cecs493-project-big-baller-brand/wiki">
+                                <a class="icon icon-git" target="_blank"
+                                    href="https://github.com/mandapie/cecs493-project-big-baller-brand/wiki">
                                     <i class="fas fa-code-branch"></i>
                                 </a>
                             </small>
@@ -109,7 +136,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Yelp Camp
                             <small>
-                                <a class="icon" target="_blank" href="https://github.com/mandapie/Yelp-Camp">
+                                <a class="icon icon-git" target="_blank" href="https://github.com/mandapie/Yelp-Camp">
                                     <i class="fas fa-code-branch"></i>
                                 </a>
                             </small>
@@ -133,7 +160,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Blog App
                             <small>
-                                <a class="icon" target="_blank" href="https://github.com/mandapie/Blog-App">
+                                <a class="icon icon-git" target="_blank" href="https://github.com/mandapie/Blog-App">
                                     <i class="fas fa-code-branch"></i>
                                 </a>
                             </small>
@@ -159,7 +186,8 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Trivia Questions
                             <small>
-                                <a class="icon" target="_blank" href="https://github.com/mandapie/trivia-questions">
+                                <a class="icon icon-git" target="_blank"
+                                    href="https://github.com/mandapie/trivia-questions">
                                     <i class="fas fa-code-branch"></i>
                                 </a>
                             </small>
@@ -185,7 +213,8 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Mountain Tour
                             <small>
-                                <a class="icon" target="_blank" href="https://github.com/mandapie/mountain-tour">
+                                <a class="icon icon-git" target="_blank"
+                                    href="https://github.com/mandapie/mountain-tour">
                                     <i class="fas fa-code-branch"></i>
                                 </a>
                             </small>
@@ -211,7 +240,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Thanos Snap
                             <small>
-                                <a class="icon" target="_blank" href="https://github.com/mandapie/Thanos-Snap">
+                                <a class="icon icon-git" target="_blank" href="https://github.com/mandapie/Thanos-Snap">
                                     <i class="fas fa-code-branch"></i>
                                 </a>
                             </small>
@@ -237,7 +266,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Chinese New Year 2019
                             <small>
-                                <a class="icon" target="_blank" href="https://github.com/mandapie/CNY-2019">
+                                <a class="icon icon-git" target="_blank" href="https://github.com/mandapie/CNY-2019">
                                     <i class="fas fa-code-branch"></i>
                                 </a>
                             </small>
@@ -261,7 +290,8 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Museum of Candy
                             <small>
-                                <a class="icon" target="_blank" href="https://github.com/mandapie/Museum-of-Candy">
+                                <a class="icon icon-git" target="_blank"
+                                    href="https://github.com/mandapie/Museum-of-Candy">
                                     <i class="fas fa-code-branch"></i>
                                 </a>
                             </small>
@@ -285,7 +315,8 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Patatap Clone
                             <small>
-                                <a class="icon" target="_blank" href="https://github.com/mandapie/Patatap-Clone">
+                                <a class="icon icon-git" target="_blank"
+                                    href="https://github.com/mandapie/Patatap-Clone">
                                     <i class="fas fa-code-branch"></i>
                                 </a>
                             </small>
@@ -309,7 +340,8 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Color Game
                             <small>
-                                <a class="icon" target="_blank" href="https://github.com/mandapie/RGB-Guessing-Game">
+                                <a class="icon icon-git" target="_blank"
+                                    href="https://github.com/mandapie/RGB-Guessing-Game">
                                     <i class="fas fa-code-branch"></i>
                                 </a>
                             </small>
@@ -333,13 +365,14 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Todo List
                             <small>
-                                <a class="icon" target="_blank" href="https://github.com/mandapie/Todo-List">
+                                <a class="icon icon-git" target="_blank" href="https://github.com/mandapie/Todo-List">
                                     <i class="fas fa-code-branch"></i>
                                 </a>
                             </small>
                         </h5>
                         <p class="card-text text-justify">Add, cross out, or delete a task on the list.
-                            <b>Don't actually use this. It doesn't save.</b></p>
+                            <b>Don't actually use this. It doesn't save.</b>
+                        </p>
                         <small class="mt-auto">HTML 5, CSS 3, jQuery</small>
                     </div>
                     <div class="card-footer d-flex justify-content-between">
@@ -354,7 +387,7 @@
             </div>
         </div>
     </div>
-    
+
     <footer>
         <hr>
         <div class="d-flex justify-content-center">
@@ -366,11 +399,14 @@
             </a>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
