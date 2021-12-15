@@ -4,6 +4,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #ebebeb;
 }
 .carousel-img {
     background-position: center;
