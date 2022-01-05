@@ -61,8 +61,19 @@ strong {
 .link:hover {
     color: #285a91;
 }
+.btn {
+    background-color: gray;
+    color: #ebebeb;
+}
 .btn:hover {
-    background-color: rgb(204, 204, 204);
+    background-color: black;
+}
+
+.fix-bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
 }
 
 @media screen and (max-width: 575px) {
@@ -139,4 +150,24 @@ a:hover {
 }
 .card-body {
     flex: 1;
+}
+
+/* darkmode */
+body.darkmode {
+    background-color: #242424;
+    color: #ebebeb;
+}
+
+.btn.darkmode:hover {
+    background: rgb(167, 167, 167);
+}
+
+.text-muted.darkmode {
+    color:rgb(167, 167, 167);
+}
+.card-body.darkmode {
+    background-color: #242424;
+}
+.card-footer.darkmode {
+    background-color: black;
 }

@@ -1,3 +1,41 @@
+
+$( document ).ready(function() {
+    var isChecked = localStorage.getItem("darkmode-switch") === 'true'? true: false;
+    $('#darkmode-switch').prop('checked', isChecked || false);
+
+    if ($('#darkmode-switch').is(':checked')) {
+        $("body").addClass("darkmode");
+        $(".btn").addClass("darkmode");
+        $(".card-body").addClass("darkmode");
+        $(".card-footer").addClass("darkmode");
+        $(".text-muted").addClass("darkmode");
+      } else {
+          $("body").removeClass("darkmode");
+          $(".btn").removeClass("darkmode");
+          $(".card-body").removeClass("darkmode");
+          $(".card-footer").removeClass("darkmode");
+          $(".text-muted").removeClass("darkmode");
+      }
+
+    $("#darkmode-switch").change(function() {
+        localStorage.setItem("darkmode-switch", $(this).is(':checked')); // store input stage when page is refreshed
+
+        if ($(this).is(':checked')) {
+          $("body").addClass("darkmode");
+          $(".btn").addClass("darkmode");
+          $(".card-body").addClass("darkmode");
+          $(".card-footer").addClass("darkmode");
+          $(".text-muted").addClass("darkmode");
+        } else {
+            $("body").removeClass("darkmode");
+            $(".btn").removeClass("darkmode");
+            $(".card-body").removeClass("darkmode");
+            $(".card-footer").removeClass("darkmode");
+            $(".text-muted").removeClass("darkmode");
+        }
+      });
+});
+
 function RemoveGrayScale(x) {
     var background_img = document.getElementsByClassName("carousel-img");
     //background_img[x].classList.remove("gray");
