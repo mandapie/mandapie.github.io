@@ -34,6 +34,12 @@ $( document ).ready(function() {
             $(".text-muted").removeClass("darkmode");
         }
       });
+
+      //#region portfolio section
+      $(".collaspableHeader").click(function() {
+        $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up')
+      });
+      //#endregion
 });
 
 function RemoveGrayScale(x) {
