@@ -1,38 +1,21 @@
-
 $( document ).ready(function() {
     var isChecked = localStorage.getItem("darkmode-switch") === 'true'? true: false;
     $('#darkmode-switch').prop('checked', isChecked || false);
 
     if ($('#darkmode-switch').is(':checked')) {
-        $("body").addClass("darkmode");
-        $(".btn").addClass("darkmode");
-        $(".card-body").addClass("darkmode");
-        $(".card-footer").addClass("darkmode");
-        $(".text-muted").addClass("darkmode");
+      AddDarkModeClass()
       } else {
-          $("body").removeClass("darkmode");
-          $(".btn").removeClass("darkmode");
-          $(".card-body").removeClass("darkmode");
-          $(".card-footer").removeClass("darkmode");
-          $(".text-muted").removeClass("darkmode");
+        RemoveDarkModeClass()
       }
 
     $("#darkmode-switch").change(function() {
         localStorage.setItem("darkmode-switch", $(this).is(':checked')); // store input stage when page is refreshed
 
         if ($(this).is(':checked')) {
-          $("body").addClass("darkmode");
-          $(".btn").addClass("darkmode");
-          $(".card-body").addClass("darkmode");
-          $(".card-footer").addClass("darkmode");
-          $(".text-muted").addClass("darkmode");
-        } else {
-            $("body").removeClass("darkmode");
-            $(".btn").removeClass("darkmode");
-            $(".card-body").removeClass("darkmode");
-            $(".card-footer").removeClass("darkmode");
-            $(".text-muted").removeClass("darkmode");
-        }
+          AddDarkModeClass()
+          } else {
+            RemoveDarkModeClass()
+          }
       });
 
       //#region portfolio section
@@ -54,4 +37,24 @@ function AddGrayScale(x) {
     //background_img[x].classList.add("gray");
     background_img[x].style.filter = "grayscale(100%)";
     background_img[x].style.transition = "all 1s ease";
+}
+
+function AddDarkModeClass() {
+  $("body").addClass("darkmode");
+  $(".btn").addClass("darkmode");
+  $(".card-body").addClass("darkmode");
+  $(".card-footer").addClass("darkmode");
+  $(".text-muted").addClass("darkmode");
+  $(".navbar-nav").addClass("darkmode");
+  $(".navbar-toggler-icon").addClass("darkmode");
+}
+
+function RemoveDarkModeClass() {
+  $("body").removeClass("darkmode");
+  $(".btn").removeClass("darkmode");
+  $(".card-body").removeClass("darkmode");
+  $(".card-footer").removeClass("darkmode");
+  $(".text-muted").removeClass("darkmode");
+  $(".navbar-nav").removeClass("darkmode");
+  $(".navbar-toggler-icon").removeClass("darkmode");
 }

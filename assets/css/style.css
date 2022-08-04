@@ -87,11 +87,18 @@ strong {
         text-align: end;
         margin-right: 20px;
     }
+    .nav-link{
+        min-width: 130px;
+    }
     .collapsing {
         position: inherit;
         height: 0!important;
         overflow: hidden;
         transition: none!important;
+    }
+    /* darkmode */
+    .navbar-nav.darkmode {
+        background: rgba(167, 167, 167, .85);
     }
 }
 
@@ -170,4 +177,7 @@ body.darkmode {
 }
 .card-footer.darkmode {
     background-color: black;
+}
+.navbar-toggler-icon.darkmode {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28235,235,235, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
