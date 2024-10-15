@@ -178,7 +178,11 @@ body.darkmode {
         overflow: hidden;
         transition: none!important;
     }
-    /* darkmode */
+    .card-img-cat {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
     .navbar-nav.darkmode {
         background: rgba(167, 167, 167, .85);
     }
