@@ -151,6 +151,9 @@ body.darkmode {
 .card-body.darkmode {
     background-color: #242424;
 }
+.card-body-cat.darkmode {
+    background-color: #242424;
+}
 .card-footer.darkmode {
     background-color: black;
 }

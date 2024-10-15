@@ -43,6 +43,7 @@ function AddDarkModeClass() {
   $("body").addClass("darkmode");
   $(".btn").addClass("darkmode");
   $(".card-body").addClass("darkmode");
+  $(".card-body-cat").addClass("darkmode");
   $(".card-footer").addClass("darkmode");
   $(".text-muted").addClass("darkmode");
   $(".navbar-nav").addClass("darkmode");
@@ -53,6 +54,7 @@ function RemoveDarkModeClass() {
   $("body").removeClass("darkmode");
   $(".btn").removeClass("darkmode");
   $(".card-body").removeClass("darkmode");
+  $(".card-body-cat").removeClass("darkmode");
   $(".card-footer").removeClass("darkmode");
   $(".text-muted").removeClass("darkmode");
   $(".navbar-nav").removeClass("darkmode");
