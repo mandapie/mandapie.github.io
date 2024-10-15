@@ -20,7 +20,7 @@ $( document ).ready(function() {
 
       //#region portfolio section
       $(".collaspableHeader").click(function() {
-        $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up')
+        $(this).find('i').toggleClass('fa-caret-square-down fa-caret-square-up')
       });
       //#endregion
 });
