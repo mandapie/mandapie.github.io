@@ -12,60 +12,118 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Home | Amanda Pan</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+
+    <title>Home | Amanda M</title>
 </head>
 
 <body>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div id="about-me" class="gray d-flex justify-content-center align-items-center carousel-img w-100">
-                    <div class="carousel-caption d-block">
-                        <h1 onmouseover="RemoveGrayScale(0)" onmouseout="AddGrayScale(0)"><a href="about.html">About Me</a></h1>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div id="contact-me" class="gray d-flex justify-content-center align-items-center carousel-img w-100">
-                    <div class="carousel-caption d-block">
-                        <h1 onmouseover="RemoveGrayScale(1)" onmouseout="AddGrayScale(1)"><a href="contact.html">Contact Me</a></h1>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div id="portfolio" class="gray d-flex justify-content-center align-items-center carousel-img w-100">
-                    <div class="carousel-caption d-block">
-                        <h1 onmouseover="RemoveGrayScale(2)" onmouseout="AddGrayScale(2)"><a href="portfolio.html">My Portfolio</a></h1>
+    <div class="row">
+        <div class="col-lg-7 col-xxl-8 order-1">
+            <div id="home" class="img-bg">
+                <div class="img-bg-overlay position-relative top-50 start-50 translate-middle">
+                    <div class="img-bg-text">
+                        <h1>Amanda Mendoza</h1>
+                        <h4>
+                            Software Engineer • .NET developer
+                        </h4>
+                        <nav class="navbar navbar-expand">
+                            <ul id="navbarNav" class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact" data-bs-toggle="modal"
+                                        data-bs-target="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <div class="col-lg-5 col-xxl-4 order-2">
+            <div id="summary">
+                <div class="position-relative top-50 start-50 translate-middle">
+                    <h5 class="text-justify">
+                        Hi, I am a software engineer with a background in .NET. I develop web and dekstop applications,
+                        batch jobs, SSRS reports, and many more!
+                    </h5>
+                </div>
+                <div class="d-flex justify-content-center mt-auto mb-5">
+                    <a class="icon" href="https://www.linkedin.com/in/amandapmendoza/">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+                    <a class="icon" href="https://github.com/mandapie">
+                        <i class="fab fa-github fa-3x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <div id="contact" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Contact</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <p class="text-justify">
+                            Feel free to connect with me on LinkedIn, email, or send me a messsage right here with your
+                            preferred communication platform!
+                        </p>
+                        <div class="d-flex justify-content-center mb-3 flex-wrap">
+                            <span class="mx-3"><i class="mr-2 fas fa-envelope"></i> contact@amandapan.com</span>
+                            <span class="mx-3"><i class="mr-2 fas fa-clock"></i> PST / UTC -8</span>
+                        </div>
+                    </div>
+                    <form method="POST" action="https://formspree.io/contact@amandapan.com"
+                        class="d-flex flex-column justify-content-center">
+                        <div class="mb-1">
+                            <input type="text" class="form-control" name="contact"
+                                placeholder="Email, phone number, etc...">
+                        </div>
+                        <div class="mb-1">
+                            <textarea name="message" class="form-control" rows="10"
+                                placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="button-18">Send</button>
+                    </form>
+                    <div class="d-flex justify-content-center mt-2">
+                        <a class="icon" href="https://www.linkedin.com/in/amandapmendoza/">
+                            <i class="fab fa-linkedin fa-3x"></i>
+                        </a>
+                        <a class="icon" href="https://github.com/mandapie">
+                            <i class="fab fa-github fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/home.js"></script>
 </body>
 
 </html>

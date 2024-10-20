@@ -12,203 +12,211 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>About | Amanda Pan</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css">
+    <title>About | Amanda M</title>
 </head>
 
 <body>
-    <header class="d-flex justify-content-between">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><i class="far fa-question-circle"></i> About</li>
-            </ol>
-        </nav>
-        <nav class="navbar navbar-light navbar-expand-sm justify-content-end">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav">
-                    <li class="nav-item pr-sm-4 p-2 p-sm-0">
-                        <a class="nav-link" href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+    <div class="d-flex justify-content-center">
+        <aside class="d-flex offcanvas-lg off canvas-start shadow-right">
+            <div class="d-flex flex-column justify-content-between">
+                <ul class="offcanvas-body list-unstyled my-auto d-flex flex-column justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item p-2 p-sm-0">
-                        <a class="nav-link" href="portfolio.html"><i class="far fa-folder-open"></i> Portfolio</a>
+                    <li class="nav-item active">
+                        <span class="nav-link disabled">About</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
                 </ul>
+                <div class="d-flex justify-content-center mb-5">
+                    <a class="icon" href="https://www.linkedin.com/in/amandapmendoza/">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+                    <a class="icon" href="https://github.com/mandapie">
+                        <i class="fab fa-github fa-3x"></i>
+                    </a>
+                </div>
             </div>
-        </nav>
-    </header>
+        </aside>
 
-    <div class="content" style="max-width: 1000px;">
-        <h1>Introduction</h1>
-        <p class="text-justify">
-            My first exposure to programming was during my college years. I started out with C++, but got more
-            comfortable with Java. I graduated as a software engineer and now working as a .NET developer. I gained
-            experience in developing web applications, console batch jobs, unit tests, working in a team
-            environment, debugging code, etc. I am a fullstack developer but would like learn a front end framework,
-            specifically React or Angular.
-        </p>
-        <br>
-        <div class="mx-auto" style="max-width: 900px;">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5><i class="icon mx-2 fas fa-briefcase"></i> Experience</h5>
-                </div>
-                <div class="col-sm-9">
-                    <div class="mb-2">
-                        <strong>Pathward, Remote &nbsp; | &nbsp; May 2022 - Present</strong><br>
-                        Working as a software engineer to develop .Net 8 applications, SSIS packages, and SSRS reports.
-                    </div>
-                    <div class="mb-2">
-                        <strong>Calsoft Systems, Torrance &nbsp; | &nbsp; Nov 2018 - Jul 2021</strong><br>
-                        I worked as an application developer to build web applications using MVC 5 .NET framework.
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5><i class="icon mx-2 fas fa-graduation-cap"></i> Education</h5>
-                </div>
-                <div class="col-sm-9">
-                    <div class="mb-2">
-                        <strong>California State University, Long Beach &nbsp; | &nbsp; May 2018</strong><br>
-                        I obtained my Bachelor's of Science from CSULB with a GPA of 3.16.
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5><i class="icon mx-2 fas fa-tools"></i> Skills</h5>
-                </div>
-                <div class="col-sm-9">
-                    <div class="mb-2">
-                        <strong>Languages and Technologies</strong><br>
-                        C#, .NET are my strong suits.<br>
-                        Have experience in Java, Java EE, Node.js, Express.js
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5><i class="icon mx-2 fas fa-icons"></i> Hobbies</h5>
-                </div>
-                <div class="col-sm-9">
-                    <div class="mb-2">
-                        My hobbies are all over the place. I juggle between 3 categories.
-                    </div>
-                    <div class="mb-2">
-                        <strong>Games</strong><br>
-                        I play video games most of my spare time. Mostly on Valorant, Ark, or other single player
-                        narrative
-                        games like RDR2, Cyberpunk, etc.
-                    </div>
-                    <div class="mb-2">
-                        <strong>Drawing</strong><br>
-                        I love drawing but struggle with coloring and it demotivates me to continue this hobby. So I am
-                        taking my time to learn the basics of coloring. When I'm slighly satisfy with my work, I post
-                        them
-                        on
-                        <a class="link" href="https://www.deviantart.com/ecromaniac">Deviant Art</a>.
-                    </div>
-                    <div class="mb-2">
-                        <strong>Music</strong><br>
-                        I played the piano growing up but haven't touched it in over 15 years! So I unfortunately lost a
-                        lot
-                        of my practical skills.😔 I also dabbled in other instruments such as the guitar, violin,
-                        and erhu (chinese violin), but don't expect much...😅
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5><i class="icon mx-2 fas fa-puzzle-piece"></i> Fun Fact</h5>
-                </div>
-                <div class="col-sm-9">
-                    <div class="mb-2">
-                        <strong>Proud parent of 6 cats</strong><br>
-                        This is an excuse to show off my cuties!😁
-                    </div>
-                    <div class="d-flex flex-wrap">
-                        <div class="col mb-2 px-1 d-flex justify-content-around">
-                            <div class="card">
-                                <img src="assets/images/cats/Ashe.jpg" alt="Ashe" class="card-img-cat" />
-                                <div class="card-body-cat d-flex justify-content-center">Ashe</div>
+        <div class="d-flex flex-column">
+            <div class="content-outer my-auto">
+                <nav class="navbar navbar-expand d-lg-none shadow-bottom mb-4">
+                    <ul id="navbarNav" class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <span class="nav-link disabled">About</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="content text-justify">
+                    <div class="row">
+                        <div class="col-lg-6 d-flex flex-column justify-content-between">
+                            <div class="row mb-4 mx-4">
+                                <div class="col-xxl-3">
+                                    <h5><i class="mr-2 fas fa-briefcase"></i> Experience</h5>
+                                </div>
+                                <div class="col-xxl-9">
+                                    <div class="mb-2">
+                                        <strong>Pathward, Remote &nbsp; | &nbsp; May 2022 - Present</strong><br>
+                                        Working as a software engineer to develop .Net 8 applications, SSIS packages,
+                                        and SSRS reports.
+                                    </div>
+                                    <div class="mb-2">
+                                        <strong>Calsoft Systems, Torrance &nbsp; | &nbsp; Nov 2018 - Jul
+                                            2021</strong><br>
+                                        I worked as an application developer to build web applications using MVC 5 .NET
+                                        framework.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-4 mx-4">
+                                <div class="col-xxl-3">
+                                    <h5><i class="mr-2 fas fa-graduation-cap"></i> Education</h5>
+                                </div>
+                                <div class="col-xxl-9">
+                                    <div class="mb-2">
+                                        <strong>California State University, Long Beach &nbsp; | &nbsp; May
+                                            2018</strong><br>
+                                        I obtained my Bachelor's of Science from CSULB with a GPA of 3.16.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-4 mx-4">
+                                <div class="col-xxl-3">
+                                    <h5><i class="mr-2 fas fa-tools"></i> Skills</h5>
+                                </div>
+                                <div class="col-xxl-9">
+                                    <div class="mb-2">
+                                        <strong>Languages and Technologies</strong><br>
+                                        C#, .NET are my strong suits.<br>
+                                        Have experience in PowerBI, Java, Java EE, Node.js, Express.js
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mx-4 last-child">
+                                <div class="col-xxl-3">
+                                    <h5><i class="mr-2 fa-solid fa-scroll"></i> Certificates</h5>
+                                </div>
+                                <div class="col-xxl-9">
+                                    <div class="mb-2">
+                                        AWS Certified Cloud Practitioner (2024 - 2027),<br>
+                                        Microsoft Certified: Power BI Data Analyst Associate (2024)
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col mb-2 px-1 d-flex justify-content-around">
-                            <div class="card">
-                                <img src="assets/images/cats/Shadow.jpg" alt="Shadow" class="card-img-cat" />
-                                <div class="card-body-cat d-flex justify-content-center">Shadow</div>
+                        <hr class="d-lg-none">
+                        <div class="col-lg-6 d-flex flex-column justify-content-between">
+                            <div class="row mb-4 mx-4">
+                                <div class="col-xxl-3">
+                                    <h5><i class="mr-2 fas fa-icons"></i> Hobbies</h5>
+                                </div>
+                                <div class="col-xxl-9">
+                                    <div class="mb-1">
+                                        My hobbies are all over the place. I juggle between 3 categories.
+                                    </div>
+                                    <div class="mb-2">
+                                        <strong>Games</strong><br>
+                                        I play video games most of my spare time. Mostly on Valorant, Ark, or other
+                                        single player narrative games like RDR2, Cyberpunk, etc.
+                                    </div>
+                                    <div class="mb-2">
+                                        <strong>Drawing</strong><br>
+                                        I love drawing but struggle with coloring and it demotivates me to continue this
+                                        hobby. So I am taking my time to learn the basics of coloring. When I'm slighly
+                                        satisfy with my work, I post them on
+                                        <a class="link" href="https://www.deviantart.com/ecromaniac">Deviant Art</a>.
+                                    </div>
+                                    <div class="mb-2">
+                                        <strong>Music</strong><br>
+                                        I played the piano growing up but haven't touched it in over 15 years! So I
+                                        unfortunately lost a lot of my practical skills.😔 I also dabbled in other
+                                        instruments such as the guitar, violin, and erhu (chinese violin), but don't
+                                        expect much...😅
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col mb-2 px-1 d-flex justify-content-around">
-                            <div class="card">
-                                <img src="assets/images/cats/Butter.jpg" alt="Butter" class="card-img-cat" />
-                                <div class="card-body-cat d-flex justify-content-center">Butter</div>
-                            </div>
-                        </div>
-                        <div class="col mb-2 px-1 d-flex justify-content-around">
-                            <div class="card">
-                                <img src="assets/images/cats/Chase.jpg" alt="Chase" class="card-img-cat" />
-                                <div class="card-body-cat d-flex justify-content-center">Chase</div>
-                            </div>
-                        </div>
-                        <div class="col mb-2 px-1 d-flex justify-content-around">
-                            <div class="card">
-                                <img src="assets/images/cats/Simba.jpg" alt="Simba" class="card-img-cat" />
-                                <div class="card-body-cat d-flex justify-content-center">Simba</div>
-                            </div>
-                        </div>
-                        <div class="col mb-2 px-1 d-flex justify-content-around">
-                            <div class="card">
-                                <img src="assets/images/cats/Coconut.jpg" alt="Coconut" class="card-img-cat" />
-                                <div class="card-body-cat d-flex justify-content-center">Coconut</div>
+                            <div class="row mx-4 last-child">
+                                <div class="col-xxl-3">
+                                    <h5><i class="mr-2 fas fa-puzzle-piece"></i> Fun Fact</h5>
+                                </div>
+                                <div class="col-xxl-9">
+                                    <div class="mb-2">
+                                        <strong>Proud parent of 6 cats</strong><br>
+                                        This is an excuse to show off my cuties!😁
+                                    </div>
+                                    <div class="d-flex flex-wrap justify-content-around">
+                                        <div class="card mb-1 shadow">
+                                            <img src="assets/images/cats/Ashe.jpg" alt="Ashe" class="card-img-cat" />
+                                            <div class="text-center">Ashe</div>
+                                        </div>
+                                        <div class="card mb-1 shadow">
+                                            <img src="assets/images/cats/Shadow.jpg" alt="Shadow"
+                                                class="card-img-cat" />
+                                            <div class="text-center">Shadow</div>
+                                        </div>
+                                        <div class="card mb-1 shadow">
+                                            <img src="assets/images/cats/Butter.jpg" alt="Butter"
+                                                class="card-img-cat" />
+                                            <div class="text-center">Butter</div>
+                                        </div>
+                                        <div class="card mb-1 shadow">
+                                            <img src="assets/images/cats/Chase.jpg" alt="Chase" class="card-img-cat" />
+                                            <div class="text-center">Chase</div>
+                                        </div>
+                                        <div class="card mb-1 shadow">
+                                            <img src="assets/images/cats/Simba.jpg" alt="Simba" class="card-img-cat" />
+                                            <div class="text-centerr">Simba</div>
+                                        </div>
+                                        <div class="card mb-1 shadow">
+                                            <img src="assets/images/cats/Coconut.jpg" alt="Coconut"
+                                                class="card-img-cat" />
+                                            <div class="text-center">Coconut</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="d-flex justify-content-center mt-auto mb-5 d-lg-none">
+                    <a class="icon" href="https://www.linkedin.com/in/amandapmendoza/">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+                    <a class="icon" href="https://github.com/mandapie">
+                        <i class="fab fa-github fa-3x"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer>
-        <hr>
-        <div class="d-flex justify-content-center">
-            <a class="icon mx-4 mb-4" href="https://www.linkedin.com/in/mandapie/">
-                <i class="fab fa-linkedin fa-3x"></i>
-            </a>
-            <a class="icon mx-4 mb-4" href="https://github.com/mandapie">
-                <i class="fab fa-github fa-3x"></i>
-            </a>
-        </div>
-    </footer>
-
-    <div class="custom-control custom-switch fix-bottom-right">
-        <input type="checkbox" class="custom-control-input" id="darkmode-switch" name="darkmode">
-        <label class="custom-control-label" for="darkmode-switch">Dark mode</label>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 
 </html>
