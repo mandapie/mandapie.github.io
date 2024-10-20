@@ -4,20 +4,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function initializeModal() {
   const contactModal = document.getElementById('contact');
-  const contactInputs = document.querySelectorAll('input');
-  const contactTextarea = document.querySelectorAll('textarea');
+  const contactInput = document.querySelectorAll('input')[0];
+  const sendBtn = document.getElementById('send-btn');
 
   contactModal.addEventListener('shown.bs.modal', () => {
-    contactInputs[0].focus();
+    contactInput.focus();
   });
 
   contactModal.addEventListener('hidden.bs.modal', () => {
-    contactInputs.forEach(el => {
-      el.value = "";
-    });
+    clearInputs();
+  });
 
-    contactTextarea.forEach(el => {
-      el.value = "";
-    });
+  sendBtn.addEventListener('click', () => {
+    clearInputs();
+  });
+}
+
+function clearInputs() {
+  const contactInputs = document.querySelectorAll('input');
+  const contactTextarea = document.querySelectorAll('textarea');
+
+  contactInputs.forEach(el => {
+    el.value = "";
+  });
+
+  contactTextarea.forEach(el => {
+    el.value = "";
   });
 }
