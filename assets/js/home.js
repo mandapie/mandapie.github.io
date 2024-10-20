@@ -5,17 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
 function initializeModal() {
   const contactModal = document.getElementById('contact');
   const contactInput = document.querySelectorAll('input')[0];
-  const sendBtn = document.getElementById('send-btn');
 
   contactModal.addEventListener('shown.bs.modal', () => {
     contactInput.focus();
-  });
-
-  contactModal.addEventListener('hidden.bs.modal', () => {
-    clearInputs();
-  });
-
-  sendBtn.addEventListener('click', () => {
     clearInputs();
   });
 }
