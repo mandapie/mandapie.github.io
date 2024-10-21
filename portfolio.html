@@ -50,22 +50,52 @@
         </aside>
 
         <div class="content-width content-outer d-flex flex-column">
+            <nav class="navbar navbar-expand d-lg-none shadow-bottom mb-4">
+                <ul id="navbarNav" class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <span class="nav-link disabled">Portfolio</span>
+                    </li>
+                </ul>
+            </nav>
             <div class="my-auto">
-                <nav class="navbar navbar-expand d-lg-none shadow-bottom mb-4">
-                    <ul id="navbarNav" class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item active">
-                            <span class="nav-link disabled">Portfolio</span>
-                        </li>
-                    </ul>
-                </nav>
-
                 <div class="content mx-4 text-justify d-flex flex-column">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-8 order-2 order-md-1">
+                                <div class="card-body d-flex flex-column justify-content-between h-100">
+                                    <div class="card-title d-flex justify-content-between flex-wrap">
+                                        <h5>Kitty Scaper</h5>
+                                        <div>
+                                            <a class="link mx-2" target="_blank"
+                                                href="https://github.com/mandapie/kitty-scraper">
+                                                <i class="icon-git fas fa-code-branch"></i> Code
+                                            </a>
+                                            <a class="link" target="_blank"
+                                                href="https://github.com/mandapie/kitty-scraper/releases">
+                                                <i class="fa-solid fa-link"></i> Executable
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Scapes adoptable cats around Southern California and notifies
+                                        user via discord webhook.</p>
+                                    <div class="card-text d-flex justify-content-between flex-wrap">
+                                        <small class="text-body-secondary">C#, .NET 8, AngleSharp,
+                                            PuppeteerSharp</small>
+                                        <small class="text-body-secondary">Oct 2024</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 order-1 order-md-2">
+                                <img src="assets/images/kittyscraper.png" class="card-img" alt="kitty scraper">
+                            </div>
+                        </div>
+                    </div>
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-4">
@@ -125,34 +155,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="assets/images/cny.png" class="card-img" alt="lion head">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body d-flex flex-column justify-content-between h-100">
-                                    <div class="card-title d-flex justify-content-between flex-wrap">
-                                        <h5>Chinese New Year Lion</h5>
-                                        <div>
-                                            <a class="link mx-2" target="_blank"
-                                                href="https://github.com/mandapie/CNY-2019">
-                                                <i class="icon-git fas fa-code-branch"></i> Code
-                                            </a>
-                                            <a class="link" target="_blank" href="https://amandapan.com/CNY-2019/">
-                                                <i class="fa-solid fa-link"></i> Demo
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <p class="card-text">A lion displaying various CNY greetings.</p>
-                                    <div class="card-text d-flex justify-content-between flex-wrap">
-                                        <small class="text-body-secondary">HTML 5, CSS 3, JavaScript</small>
-                                        <small class="text-body-secondary">Jan 2019</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <button id="see-more-btn" type="button" class="align-self-center button-18 mb-3"
                         data-bs-toggle="collapse" data-bs-target="#more">See more...</button>
@@ -160,58 +162,27 @@
                     <div id="more" class="collapse">
                         <div class="card mb-3">
                             <div class="row g-0">
-                                <div class="col-md-8 order-2 order-md-1">
-                                    <div class="card-body d-flex flex-column justify-content-between h-100">
-                                        <div class="card-title d-flex justify-content-between flex-wrap">
-                                            <h5>Todo List 2</h5>
-                                            <div>
-                                                <a class="link mx-2" target="_blank"
-                                                    href="https://github.com/mandapie/todo-list-with-nodejs">
-                                                    <i class="icon-git fas fa-code-branch"></i> Code
-                                                </a>
-                                                <span class="text-muted">
-                                                    <i class="fa-solid fa-link-slash"></i> Localhost
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <p class="card-text">Todo List built with NodeJS.</p>
-                                        <div class="card-text d-flex justify-content-between flex-wrap">
-                                            <small class="text-body-secondary">HTML, CSS, jQuery, NodeJS, ExpressJS,
-                                                MongoDB, Mongoose, AWS,
-                                                C9</small>
-                                            <small class="text-body-secondary">Dec 2021</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 order-1 order-md-2">
-                                    <img src="assets/images/todolist-nodejs.png" class="card-img" alt="todo nodejs">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="assets/images/mountain.png" class="card-img" alt="mountain">
+                                    <img src="assets/images/cny.png" class="card-img" alt="lion head">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body d-flex flex-column justify-content-between h-100">
                                         <div class="card-title d-flex justify-content-between flex-wrap">
-                                            <h5>Mountain Tour</h5>
+                                            <h5>Chinese New Year Lion</h5>
                                             <div>
                                                 <a class="link mx-2" target="_blank"
-                                                    href="https://github.com/mandapie/mountain-tour">
+                                                    href="https://github.com/mandapie/CNY-2019">
                                                     <i class="icon-git fas fa-code-branch"></i> Code
                                                 </a>
-                                                <a class="link" target="_blank"
-                                                    href="https://amandapan.com/mountain-tour">
+                                                <a class="link" target="_blank" href="https://amandapan.com/CNY-2019/">
                                                     <i class="fa-solid fa-link"></i> Demo
                                                 </a>
                                             </div>
                                         </div>
-                                        <p class="card-text">A responsive website using flex box.</p>
+                                        <p class="card-text">A lion displaying various CNY greetings.</p>
                                         <div class="card-text d-flex justify-content-between flex-wrap">
-                                            <small class="text-body-secondary">HTML 5, CSS 3</small>
-                                            <small class="text-body-secondary">May 2019</small>
+                                            <small class="text-body-secondary">HTML 5, CSS 3, JavaScript</small>
+                                            <small class="text-body-secondary">Jan 2019</small>
                                         </div>
                                     </div>
                                 </div>
@@ -220,39 +191,6 @@
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-8 order-2 order-md-1">
-                                    <div class="card-body d-flex flex-column justify-content-between h-100">
-                                        <div class="card-title d-flex justify-content-between flex-wrap">
-                                            <h5>Museum of Candy</h5>
-                                            <div>
-                                                <a class="link mx-2" target="_blank"
-                                                    href="https://github.com/mandapie/Museum-of-Candy">
-                                                    <i class="icon-git fas fa-code-branch"></i> Code
-                                                </a>
-                                                <a class="link" target="_blank"
-                                                    href="https://amandapan.com/Museum-of-Candy">
-                                                    <i class="fa-solid fa-link"></i> Demo
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <p class="card-text">A responsive website with simple navbar animation.</p>
-                                        <div class="card-text d-flex justify-content-between flex-wrap">
-                                            <small class="text-body-secondary">HTML 5, CSS 3, jQuery, Bootstrap
-                                                4</small>
-                                            <small class="text-body-secondary">Nov 2018</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 order-1 order-md-2">
-                                    <img src="assets/images/museumofcandy.png" class="card-img" alt="museum of candy">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="assets/images/tickertracker.png" class="card-img" alt="ticker tracker">
-                                </div>
-                                <div class="col-md-8">
                                     <div class="card-body d-flex flex-column justify-content-between h-100">
                                         <div class="card-title d-flex justify-content-between flex-wrap">
                                             <h5>Ticker Tracker</h5>
@@ -275,152 +213,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-8 order-2 order-md-1">
-                                    <div class="card-body d-flex flex-column justify-content-between h-100">
-                                        <div class="card-title d-flex justify-content-between flex-wrap">
-                                            <h5>Yelp Camp</h5>
-                                            <div>
-                                                <a class="link mx-2" target="_blank"
-                                                    href="https://github.com/mandapie/Yelp-Camp">
-                                                    <i class="icon-git fas fa-code-branch"></i> Code
-                                                </a>
-                                                <span class="text-muted">
-                                                    <i class="fa-solid fa-link-slash"></i> Localhost
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <p class="card-text">Yelp Camp allows users to create new campgrounds and
-                                            receive feedbacks from other users.</p>
-                                        <div class="card-text d-flex justify-content-between flex-wrap">
-                                            <small class="text-body-secondary">Node.js, EJS, Express.js MongoDB,
-                                                Passport.js, Moment.js, Method-override, Bootstrap</small>
-                                            <small class="text-body-secondary">Jun 2018 - Aug 2018</small>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="col-md-4 order-1 order-md-2">
-                                    <img src="assets/images/yelpcamp.png" class="card-img" alt="yelpcamp">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="assets/images/blog.png" class="card-img" alt="blog">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body d-flex flex-column justify-content-between h-100">
-                                        <div class="card-title d-flex justify-content-between flex-wrap">
-                                            <h5>Blog App</h5>
-                                            <div>
-                                                <a class="link mx-2" target="_blank"
-                                                    href="https://github.com/mandapie/Blog-App">
-                                                    <i class="icon-git fas fa-code-branch"></i> Code
-                                                </a>
-                                                <span class="text-muted">
-                                                    <i class="fa-solid fa-link-slash"></i> Localhost
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <p class="card-text">Save your stories to your blog.</p>
-                                        <div class="card-text d-flex justify-content-between flex-wrap">
-                                            <small class="text-body-secondary">Node.js, EJS, Express.js, MongoDB,
-                                                Semantic UI</small>
-                                            <small class="text-body-secondary">Jul 2018</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-8 order-2 order-md-1">
-                                    <div class="card-body d-flex flex-column justify-content-between h-100">
-                                        <div class="card-title d-flex justify-content-between flex-wrap">
-                                            <h5>Patatap Clone</h5>
-                                            <div>
-                                                <a class="link mx-2" target="_blank"
-                                                    href="https://github.com/mandapie/Patatap-Clone">
-                                                    <i class="icon-git fas fa-code-branch"></i> Code
-                                                </a>
-                                                <a class="link" target="_blank"
-                                                    href="https://amandapan.com/Patatap-Clone">
-                                                    <i class="fa-solid fa-link"></i> Demo
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <p class="card-text">Press any A-Z keys for unique sounds and cool animations.
-                                        </p>
-                                        <div class="card-text d-flex justify-content-between flex-wrap">
-                                            <small class="text-body-secondary">HTML 5, CSS 3, Paper.js,
-                                                Howler.js</small>
-                                            <small class="text-body-secondary">Jul 2018</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 order-1 order-md-2">
-                                    <img src="assets/images/patatap.png" class="card-img" alt="patatap">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="assets/images/rgbgame.png" class="card-img" alt="rgbgame">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body d-flex flex-column justify-content-between h-100">
-                                        <div class="card-title d-flex justify-content-between flex-wrap">
-                                            <h5>Color Game</h5>
-                                            <div>
-                                                <a class="link mx-2" target="_blank"
-                                                    href="https://github.com/mandapie/RGB-Guessing-Game">
-                                                    <i class="icon-git fas fa-code-branch"></i> Code
-                                                </a>
-                                                <a class="link" target="_blank"
-                                                    href="https://amandapan.com/RGB-Guessing-Game">
-                                                    <i class="fa-solid fa-link"></i> Demo
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <p class="card-text">Guess the RGB code based on the given color.</p>
-                                        <div class="card-text d-flex justify-content-between flex-wrap">
-                                            <small class="text-body-secondary">HTML 5, CSS 3, JavaScript</small>
-                                            <small class="text-body-secondary">Jun 2018</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-8 order-2 order-md-1">
-                                    <div class="card-body d-flex flex-column justify-content-between h-100">
-                                        <div class="card-title d-flex justify-content-between flex-wrap">
-                                            <h5>Todo List</h5>
-                                            <div>
-                                                <a class="link mx-2" target="_blank"
-                                                    href="https://github.com/mandapie/Todo-List">
-                                                    <i class="icon-git fas fa-code-branch"></i> Code
-                                                </a>
-                                                <a class="link" target="_blank" href="https://amandapan.com/Todo-List">
-                                                    <i class="fa-solid fa-link"></i> Demo
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <p class="card-text">Todo list showchase with no backend.</p>
-                                        <div class="card-text d-flex justify-content-between flex-wrap">
-                                            <small class="text-body-secondary">HTML 5, CSS 3, jQuery</small>
-                                            <small class="text-body-secondary">Jun 2018</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 order-1 order-md-2">
-                                    <img src="assets/images/todo.png" class="card-img" alt="todo">
+                                    <img src="assets/images/tickertracker.png" class="card-img" alt="ticker tracker">
                                 </div>
                             </div>
                         </div>
@@ -456,15 +250,14 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="d-flex justify-content-center mt-auto mb-5 d-lg-none">
-                    <a class="icon" href="https://www.linkedin.com/in/amandapmendoza/">
-                        <i class="fab fa-linkedin fa-3x"></i>
-                    </a>
-                    <a class="icon" href="https://github.com/mandapie">
-                        <i class="fab fa-github fa-3x"></i>
-                    </a>
-                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-auto mb-5 d-lg-none">
+                <a class="icon" href="https://www.linkedin.com/in/amandapmendoza/">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+                <a class="icon" href="https://github.com/mandapie">
+                    <i class="fab fa-github fa-3x"></i>
+                </a>
             </div>
         </div>
     </div>

@@ -219,4 +219,8 @@ aside {
     .content-outer {
         margin: 0;
     }
+
+    .content-outer {
+        min-height: 100vh;
+    }
 }
