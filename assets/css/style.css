@@ -36,8 +36,17 @@ hr {
 aside {
     min-height: 100vh;
     height: 100%;
+    width: 200px;
     position: sticky;
     top: 0;
+}
+
+.nav-menu {
+    background: rgba(255, 255, 255, 0.6) !important;
+}
+
+.nav-menu-shadow {
+    box-shadow: 1.1rem 0 1rem rgba(0, 0, 0, 0.2), -1.1rem 0 1rem rgba(0, 0, 0, 0.2) !important;
 }
 
 .icon {
@@ -107,12 +116,8 @@ aside {
     margin: 0 auto;
 }
 
-.shadow-right {
-    box-shadow: 1.1rem 0 1rem rgba(0, 0, 0, 0.15)
-}
-
 .shadow-bottom {
-    box-shadow: 0 1.1rem 1rem rgba(0, 0, 0, 0.15)
+    box-shadow: 0 1.1rem 1rem rgba(0, 0, 0, 0.2)
 }
 
 .content-width {
@@ -153,7 +158,7 @@ aside {
 }
 
 .nav-item.active {
-    background-color: rgba(255, 255, 255, 0.875);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .nav-link {
@@ -213,7 +218,9 @@ aside {
         position: relative;
     }
 
-    .last-child { margin-bottom: 1.5rem; }
+    .last-child {
+        margin-bottom: 1.5rem;
+    }
 
     .content,
     .content-outer {
